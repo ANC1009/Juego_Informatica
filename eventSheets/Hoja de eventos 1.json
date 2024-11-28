@@ -1,0 +1,337 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Monedas",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 105191642136594
+		},
+		{
+			"eventType": "variable",
+			"name": "Salud_Castillo_Enemigo",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 693209766871570
+		},
+		{
+			"eventType": "variable",
+			"name": "Reloj",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 800049176618727
+		},
+		{
+			"eventType": "variable",
+			"name": "Tiempo",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 364226588480088
+		},
+		{
+			"eventType": "variable",
+			"name": "Salud_Castillo",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235908294741635
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 892024965926614,
+					"parameters": {
+						"text": "\"jerarquica\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 379591596912587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 783120592310263,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 575887235884545,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 570785993233901,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_1",
+					"sid": 815759077224141,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_2",
+					"sid": 407267124214685,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 398988894358395,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 724216332294681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 776033938163773
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "NumeroDeMonedas",
+					"sid": 632418093175427,
+					"parameters": {
+						"text": "Monedas"
+					}
+				}
+			],
+			"sid": 604494729362766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 308406498153956,
+					"parameters": {
+						"text": "\"wozniak\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 240406544005024
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 726207391887675,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 708811476746807,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 352189748214747,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_2",
+					"sid": 186294568069160,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_3",
+					"sid": 119333332126622,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 192210743100867,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gnu_Linux",
+					"sid": 278119469636386,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 929285167847479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 911775702977344,
+					"parameters": {
+						"text": "\"GNU LINUX\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 881881409286143
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 778215760344292,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 705505903662073,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 692002637303408,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_3",
+					"sid": 686178570997550,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gnu_Linux",
+					"sid": 611135908042444,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 124340002711379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 742512702140805,
+					"parameters": {
+						"variable": "Monedas",
+						"comparison": 4,
+						"value": "99"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Botón",
+					"sid": 929160834010876,
+					"parameters": {
+						"mode": "enabled"
+					}
+				}
+			],
+			"sid": 789936950552267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 709304082611692
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Caballero_Wait",
+					"sid": 733944989734101,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 487168644440647
+		}
+	],
+	"sid": 720974324559931
+}
