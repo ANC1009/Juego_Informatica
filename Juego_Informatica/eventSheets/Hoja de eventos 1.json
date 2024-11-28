@@ -1,0 +1,118 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Contador_2",
+			"type": "number",
+			"initialValue": "800",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 527743403821896
+		},
+		{
+			"eventType": "variable",
+			"name": "Contador_1",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 529814733027412
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 568246850935426,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 299133507429091,
+					"parameters": {
+						"variable": "Contador_1",
+						"value": "20"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Sprite2",
+					"sid": 416423696062142,
+					"parameters": {
+						"x": "Contador_1"
+					}
+				}
+			],
+			"sid": 227355068474295,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 939489726501127,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 169567814158836,
+					"parameters": {
+						"variable": "Contador_2",
+						"value": "40"
+					}
+				},
+				{
+					"id": "set-x",
+					"objectClass": "Sprite3",
+					"sid": 453505628226843,
+					"parameters": {
+						"x": "Contador_2"
+					}
+				}
+			],
+			"sid": 442489984444848,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite2",
+					"sid": 362781851991543,
+					"parameters": {
+						"object": "Sprite3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Sprite4",
+					"sid": 826489453984720,
+					"parameters": {
+						"x": "Contador_1"
+					}
+				}
+			],
+			"sid": 818789166227921
+		}
+	],
+	"sid": 720974324559931
+}
