@@ -1,2 +1,2 @@
 # Juego_Informatica
-Este juego esta desarrollado con los conocimientos adquiridos en l asignatura de informatica durante mi primer año en la universidad
+En esta ultima version, se han implementado tanto el menu como las escenas de victoria y derrota, ademas se han corregido algunos fallos y se ha implemntado una funcion para poder volver a jugar
