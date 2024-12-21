@@ -1,0 +1,371 @@
+{
+	"name": "Final_Derrota",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Boton_ReStart",
+					"sid": 170776046888524
+				}
+			],
+			"actions": [
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 915748680495858,
+					"parameters": {
+						"reset-static": true
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 529350222274141,
+					"parameters": {
+						"layout": "Main"
+					}
+				}
+			],
+			"sid": 189187954087608
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 736046903917724,
+					"parameters": {
+						"variable": "Salud_Castillo",
+						"comparison": 0,
+						"value": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_100",
+					"sid": 243784700327225,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_0",
+					"sid": 113920071295484,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_50",
+					"sid": 728140278407050,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 926337143263563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 833009912600095,
+					"parameters": {
+						"variable": "Salud_Castillo",
+						"comparison": 0,
+						"value": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_50",
+					"sid": 367390594681520,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_100",
+					"sid": 413503358763491,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_0",
+					"sid": 872723209362965,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 486688406376054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 826908281907993,
+					"parameters": {
+						"variable": "Salud_Castillo",
+						"comparison": 0,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_0",
+					"sid": 721872285700739,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_100",
+					"sid": 450430818293772,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_50",
+					"sid": 833337944403095,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 617830602340565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 738432692616418,
+					"parameters": {
+						"variable": "Salud_Castillo",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_0",
+					"sid": 910217748499219,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_100",
+					"sid": 990890357605460,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_50",
+					"sid": 878949353729832,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 654259081445723
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 466216133935602,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"comparison": 0,
+						"value": "300"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_Enemigo_100",
+					"sid": 795301007231948,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_0",
+					"sid": 978408353623570,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_50",
+					"sid": 526851243869240,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 283635301870003
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 385456229230103,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"comparison": 0,
+						"value": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_50",
+					"sid": 319942724986702,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_Enemigo_100",
+					"sid": 847021507795870,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_0",
+					"sid": 216713383405215,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 588834883954358
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 145024352538919,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"comparison": 0,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_0",
+					"sid": 599702440916755,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_50",
+					"sid": 391122431228147,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_Enemigo_100",
+					"sid": 608771264337320,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 376221179360497
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 366288393258780,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_50",
+					"sid": 815976731072290,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_Enemigo_100",
+					"sid": 283915984650904,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_0",
+					"sid": 472153542959180,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 144668532778497
+		}
+	],
+	"sid": 822928937005911
+}
