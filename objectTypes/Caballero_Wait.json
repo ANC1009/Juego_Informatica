@@ -1,0 +1,69 @@
+{
+	"name": "Caballero_Wait",
+	"plugin-id": "Sprite",
+	"sid": 661919236743261,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Desvanecer",
+			"sid": 832132682508688
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 86,
+						"height": 86,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4877083,
+						"collisionPoly": {
+							"points": [
+								0.5465116279069767,
+								0.3023255813953488,
+								0.6046511627906976,
+								0.3023255813953488,
+								0.7790697674418605,
+								0.37209302325581395,
+								0.7790697674418605,
+								0.6511627906976745,
+								0.7674418604651163,
+								0.7093023255813954,
+								0.6511627906976745,
+								1,
+								0.313953488372093,
+								0.9883720930232558,
+								0.27906976744186046,
+								0.7209302325581395,
+								0.3488372093023256,
+								0.5348837209302325,
+								0.5116279069767442,
+								0.3372093023255814
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 222897093971997,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

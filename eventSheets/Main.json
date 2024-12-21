@@ -1,0 +1,512 @@
+{
+	"name": "Main",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Monedas",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 105191642136594
+		},
+		{
+			"eventType": "variable",
+			"name": "Salud_Castillo_Enemigo",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 693209766871570
+		},
+		{
+			"eventType": "variable",
+			"name": "Reloj",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 800049176618727
+		},
+		{
+			"eventType": "variable",
+			"name": "Tiempo",
+			"type": "number",
+			"initialValue": "20",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 364226588480088
+		},
+		{
+			"eventType": "variable",
+			"name": "Bola_de_fuego",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 247409428337432
+		},
+		{
+			"eventType": "variable",
+			"name": "Salud_Castillo",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235908294741635
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 892024965926614,
+					"parameters": {
+						"text": "\"jerarquica\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 379591596912587
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 783120592310263,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesta_Pregunta_1",
+					"sid": 575887235884545,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 570785993233901,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_1",
+					"sid": 815759077224141,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_2",
+					"sid": 407267124214685,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 398988894358395,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Steve",
+					"sid": 167868961086806,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 724216332294681
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 776033938163773
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "NumeroDeMonedas",
+					"sid": 632418093175427,
+					"parameters": {
+						"text": "Monedas"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 924269534976951,
+					"parameters": {
+						"variable": "Bola_de_fuego",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 604494729362766
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 308406498153956,
+					"parameters": {
+						"text": "\"wozniak\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 240406544005024
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 726207391887675,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesto_Pregunta_2",
+					"sid": 708811476746807,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 352189748214747,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_2",
+					"sid": 186294568069160,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_3",
+					"sid": 119333332126622,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 192210743100867,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gnu_Linux",
+					"sid": 278119469636386,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Steve",
+					"sid": 420781726198294,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 929285167847479
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 911775702977344,
+					"parameters": {
+						"text": "\"GNU LINUX\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 881881409286143
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 778215760344292,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Respuesta_Pregunta_3",
+					"sid": 705505903662073,
+					"parameters": {
+						"mode": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 692002637303408,
+					"parameters": {
+						"variable": "Monedas",
+						"value": "100"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta_3",
+					"sid": 686178570997550,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Gnu_Linux",
+					"sid": 611135908042444,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 124340002711379
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 914331306282937,
+					"parameters": {
+						"variable": "Monedas",
+						"comparison": 5,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Botón",
+					"sid": 929160834010876,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 161715484723960,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 789936950552267
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 709304082611692
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Fireball",
+					"sid": 124772054114676,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 700170278752800,
+					"parameters": {
+						"variable": "Bola_de_fuego",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 487168644440647
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 760008375591442,
+					"parameters": {
+						"first-value": "Monedas",
+						"comparison": 2,
+						"second-value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 305103317413312,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Botón",
+					"sid": 386388241396139,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 586435081189349
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Fireball",
+					"sid": 291934892114820
+				}
+			],
+			"actions": [
+				{
+					"id": "set-x",
+					"objectClass": "Fireball",
+					"sid": 643737329289763,
+					"parameters": {
+						"x": "Bola_de_fuego"
+					}
+				}
+			],
+			"sid": 639805318750875
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-x",
+					"objectClass": "Fireball",
+					"sid": 584034797128011,
+					"parameters": {
+						"comparison": 0,
+						"x-co-ordinate": "655"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Fireball",
+					"sid": 240622282858856,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 625843927509109,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 495451454710133
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 117557986733356,
+					"parameters": {
+						"variable": "Salud_Castillo_Enemigo",
+						"comparison": 0,
+						"value": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_Enemigo_100",
+					"sid": 561528591274318,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Castillo_enemigo_50",
+					"sid": 680473134171247,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 138415985194193
+		}
+	],
+	"sid": 720974324559931
+}

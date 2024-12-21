@@ -1,0 +1,61 @@
+{
+	"name": "Castillo_Enemigo_100",
+	"plugin-id": "Sprite",
+	"sid": 956936712471012,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1423,
+						"height": 1129,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2784580,
+						"collisionPoly": {
+							"points": [
+								0.39002108222066056,
+								0,
+								0.4497540407589599,
+								0.0044286979627989375,
+								0.8053408292340126,
+								0.3259521700620018,
+								1,
+								0.6687333923826395,
+								0.9901616303583978,
+								0.91674047829938,
+								0.27055516514406186,
+								0.9991142604074402,
+								0.10119465917076599,
+								0.9309123117803366,
+								0.0007027406886858749,
+								0.7147918511957484,
+								0.0021082220660576245,
+								0.3445527015057573
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 542734866110235,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
