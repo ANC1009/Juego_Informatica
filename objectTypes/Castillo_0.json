@@ -1,0 +1,67 @@
+{
+	"name": "Castillo_0",
+	"plugin-id": "Sprite",
+	"sid": 443923586148531,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1418,
+						"height": 932,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1589676,
+						"collisionPoly": {
+							"points": [
+								0.6346967559943583,
+								0.016094420600858368,
+								0.8892806770098731,
+								0.1759656652360515,
+								0.9873060648801129,
+								0.26716738197424894,
+								1,
+								0.6051502145922747,
+								0.9083215796897038,
+								0.8669527896995708,
+								0.7778561354019746,
+								0.971030042918455,
+								0.47884344146685476,
+								0.9989270386266095,
+								0.4139633286318759,
+								0.9924892703862661,
+								0.009873060648801113,
+								0.8637339055793991,
+								0,
+								0.5611587982832618,
+								0.18194640338504942,
+								0.13948497854077252,
+								0.580394922425952,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 942281182700857,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

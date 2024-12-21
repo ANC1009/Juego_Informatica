@@ -1,0 +1,67 @@
+{
+	"name": "Castillo_50",
+	"plugin-id": "Sprite",
+	"sid": 662867549020548,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1434,
+						"height": 1148,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 11278,
+						"collisionPoly": {
+							"points": [
+								0.9665271966527197,
+								0.3127177700348432,
+								0.99860529986053,
+								0.3510452961672474,
+								0.9923291492329149,
+								0.676829268292683,
+								0.8947001394700139,
+								0.8945993031358885,
+								0.7503486750348675,
+								0.9886759581881533,
+								0.4769874476987448,
+								0.9991289198606271,
+								0.4128312412831241,
+								0.9939024390243902,
+								0.009762900976290068,
+								0.8850174216027874,
+								0.0006973500697350365,
+								0.6376306620209059,
+								0.1847977684797768,
+								0.304006968641115,
+								0.5662482566248257,
+								0.023519163763066203,
+								0.6178521617852162,
+								0.0008710801393728223
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 307572819044382,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
